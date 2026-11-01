@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+ENV/
+*.db
+*.sqlite3
+
+# Node / Frontend
+node_modules/
+dist-ssr/
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating System
+Thumbs.db
+.DS_Store
+desktop.ini
+

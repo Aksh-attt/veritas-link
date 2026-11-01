@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0d0617;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Syne', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Minimal Dark Glassmorphic Cards */
+.glass-panel {
+  background: rgba(26, 12, 43, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(238, 214, 245, 0.12);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-interactive {
+  background: rgba(26, 12, 43, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(238, 214, 245, 0.12);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-interactive:hover {
+  background: rgba(38, 18, 62, 0.85);
+  border-color: rgba(240, 68, 217, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px -8px rgba(129, 39, 181, 0.25);
+}
+
+/* Subtle glow effects */
+.glow-purple {
+  box-shadow: 0 0 40px -10px rgba(129, 39, 181, 0.35);
+}
+
+.glow-cyan, .glow-yellow {
+  box-shadow: 0 0 30px -5px rgba(0, 240, 255, 0.45);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 35px -8px rgba(240, 68, 217, 0.35);
+}
+
+/* Clean Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(13, 6, 23, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(129, 39, 181, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 68, 217, 0.6);
+}
